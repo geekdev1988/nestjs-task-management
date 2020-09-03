@@ -1,6 +1,7 @@
 import { PipeTransform, BadRequestException } from "@nestjs/common";
-import { TaskStatus } from "../task.model";
+
 import { TasksService } from "../tasks.service";
+import { TaskStatus } from "../task-status.enum";
 
 export class TaskStatusValidationPipe implements PipeTransform
 {
